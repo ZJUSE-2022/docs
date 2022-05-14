@@ -1,3 +1,10 @@
+/*
+ * @Author: Pan Zhiyuan
+ * @Date: 2022-04-18 08:13:31
+ * @LastEditors: Pan Zhiyuan
+ * @FilePath: /cc-docs/src/pages/index.tsx
+ * @Description: 
+ */
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
@@ -29,7 +36,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
