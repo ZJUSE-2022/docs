@@ -1,10 +1,3 @@
-/*
- * @Author: Pan Zhiyuan
- * @Date: 2022-04-18 08:13:31
- * @LastEditors: Pan Zhiyuan
- * @FilePath: /cc-docs/docusaurus.config.js
- * @Description: 
- */
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
@@ -13,14 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'zjucc Documentation',
+  title: '医疗平台-管理模块',
   tagline: '',
-  url: 'https://zjuse-2022.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  url: 'https://zjuse-2022.github.io/',
+  baseUrl: '/docs/',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'zjuse-2022', // Usually your GitHub org/user name.
+  organizationName: 'ZJUSE-2022', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
   presets: [
@@ -29,8 +22,9 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/pan2013e/cc-docs/blob/main/',
+          editUrl: 'https://github.com/ZJUSE-2022/docs/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,7 +37,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'C Compiler',
+        title: '医疗平台-管理模块',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -56,12 +50,7 @@ const config = {
             label: '文档',
           },
           {
-            to: 'api',
-            position: 'left',
-            label: 'API',
-          },
-          {
-            href: 'https://github.com/pan2013e/c-compiler',
+            href: 'https://github.com/pan2013e/se-management',
             label: 'GitHub',
             position: 'right',
           },
@@ -69,7 +58,7 @@ const config = {
       },
       footer: {
         style: 'light',
-        copyright: `Copyright © ${new Date().getFullYear()} Pan Zhiyuan, Zhejiang University.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SE Group, Zhejiang University.`,
       },
       prism: {
         theme: lightCodeTheme,
