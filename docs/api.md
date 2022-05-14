@@ -1,8 +1,7 @@
 ---
+title: API
 sidebar_position: 2
 ---
-
-# 接口文档
 
 ## Version: 1.0
 

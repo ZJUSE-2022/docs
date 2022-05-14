@@ -1,8 +1,7 @@
 ---
+title: 数据库
 sidebar_position: 3
 ---
-
-# 数据库
 
 ## E-R Model
 
